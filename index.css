@@ -1,0 +1,183 @@
+*{
+  padding:0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.title{
+  margin: 2px;
+  padding:5%;
+  text-transform: uppercase;
+  font-size:2rem;
+  text-align:center;
+  color:white;
+  text-shadow:2px 1px black;
+}
+
+.title::after{
+content:'';
+background:#fd7e14;
+display:block;
+height:3px;
+width:170px;
+margin:3px auto 0px;
+}
+
+/*nav*/
+.navbar{
+background-color:#eb7b0c;
+}
+.nav-item{
+  padding:10px;
+}
+.nav-link,.icon-link{
+  font-weight:900;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffff;
+  font-size: 1.4rem;
+}
+.icon-link i{
+  padding:10px;
+  border: 2px solid #f3971b;
+  border-radius: 50%;
+  margin-right:20px;
+  font-size:2rem;
+}
+.home{
+	background-color: #040404;
+	padding:15%;
+}
+.home .home-text h1{
+  font-size:2.5rem;
+  color:#ffffff;
+  margin:10px 0px;
+  font-weight:500;
+  animation: slideLeft 1.5s ease;
+}
+.home .home-text h3{
+  font-size:3.5rem;
+  color:#f3971b;
+  margin:15px 0px 0px;
+  font-weight:700;
+  animation: slideRight 1.5s ease;
+}
+
+@keyframes slideLeft{
+  0%{transform: translateX(-100%);opacity:0}
+  100%{transform: translateX(0);opacity:1}
+}
+@keyframes slideRight{
+  0%{transform: translateX(100%);opacity:0}
+  100%{transform: translateX(0);opacity:1}
+}
+
+
+/*about*/
+.about{
+  color: #ffff;
+  float: left;
+  width: 100%;
+  padding:10px; 
+  background-color:#353535;
+}
+.about .about-content .description .btn a{
+  color: white;
+}
+
+.about .about-content .description {
+  float: left;
+  padding: 15px;
+}
+.about .about-content .description h1,h2{
+  font-weight:700;
+}
+.about .about-content .description p{
+  line-height:1.8;
+  font-size:1.2rem;
+}
+
+/*skill*/
+.skill {
+background-color:black;
+color: white;
+padding-bottom: 
+}
+
+progress{
+ width: 100%;
+ height:60%;
+}
+.skill label{
+ font-weight: 900;
+ margin:1%;
+}
+.skill-bar{
+  background-color: #ddd;
+}
+.skills{
+  margin:1% 5% 3% 0%;
+   background-color:#fd7e14;
+  text-align:right;
+  font-size: 1rem;
+  font-weight: 900;
+}
+.html{
+  width:90%;
+}
+.css{
+  width: 85%;
+}
+.js{
+  width: 70%;
+}
+.jq{
+ width: 60%;
+}
+.bootstrap{
+  width: 85%;
+}
+
+
+
+/*portfolio*/
+.Portfolio{
+padding-bottom: 5%;
+}
+.card{
+  box-shadow: 5px 5px 18px #a39b91;
+}
+.Portfolio .card-img img{
+  height:230px;
+  width:100%;
+}
+
+
+
+/*contact*/
+.contact{
+  background-image: url('https://topazdetailing.com/wp-content/uploads/2017/05/topaz-detailing-london-page-header-main-background-05.jpg');
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.contact input,textarea{
+  width:70%;
+  height:10%;
+  padding:10px;
+}
+
+/*footer*/
+.footer{
+  color: white;
+  padding:2px;
+  background-color: black;
+}
+.footer p{
+  padding-top:5px;
+}
